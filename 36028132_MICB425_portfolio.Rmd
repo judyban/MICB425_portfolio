@@ -1,0 +1,6 @@
+---
+title: "MICB425_Portfolio"
+author: "Judy Ban"
+date: "January 19, 2018"
+output: html_document
+---
