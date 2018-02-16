@@ -4,7 +4,7 @@ author: "Judy Ban 36028132"
 date: "version `r format(Sys.time(), '%B %d, %Y')`"
 output: 
   html_document:
-    TOC: TRUE
+    toc: true
 ---
 # Module 01
 
@@ -48,16 +48,71 @@ The remaining second level headers (##) are for separating data science Friday, 
 ### Installation check
 Third level headers (###) should be used for links to assignments, evidence worksheets, problem sets, and readings, as seen here.  
 
-Use this space to include your installation screenshots.
+Use this space to include your installation screenshots.  
+![Windows GitBash Terminal](https://i.imgur.com/0B08Rxn.png)  
+
+![RStudio](https://i.imgur.com/hnKO3b9.png)  
+
+![GitHub homepage](https://i.imgur.com/F7WjXIP.png)
+
 
 
 
 ### Portfolio repo setup
 Detail the code you used to create, initialize, and push your portfolio repo to GitHub. This will be helpful as you will need to repeat many of these steps to update your porfolio throughout the course.
 
+starting from after registering for a new GitHub account  
+1. git init  
+2. git add .  
+3. git commit -m "First commit"  
+4. git remote add origin https://github.com/judyban/MICB425_portfolio  
+5. git remote -v  
+6. git push -u origin master  
+
+Repeat steps 2, 3 and git push to push new materials into the repository  
 
 
 ### RMarkdown pretty html challenge
+
+The following assignment is an exercise for the reproduction of this .html document using the RStudio and RMarkdown tools we’ve shown you in class. Hopefully by the end of this, you won’t feel at all the way this poor PhD student does. We’re here to help, and when it comes to R, the internet is a really valuable resource. This open-source program has all kinds of tutorials online.
+![ ](http://www.phdcomics.com/comics/archive/phd011718s.gif)  
+[http://phdcomics.com/](http://phdcomics.com/)
+Comic posted 1-17-2018
+
+####Challenge Goals
+
+The goal of this R Markdown html challenge is to give you an opportunity to play with a bunch of different RMarkdown formatting. Consider it a chance to flex your RMarkdown muscles. Your goal is to write your own RMarkdown that rebuilds this html document as close to the original as possible. So, yes, this means you get to copy my irreverant tone exactly in your own Markdowns. It’s a little window into my psyche. Enjoy =)
+
+**hint: go to the [PhD Comics website](http://phdcomics.com/) to see if you can find the image above**  
+*If you can’t find that exact image, just find a comparable image from the PhD Comics website and include it in your markdown*
+
+#####Here's a header!
+
+Let’s be honest, this header is a little arbitrary. But show me that you can reproduce headers with different levels please. This is a level 3 header, for your reference (you can most easily tell this from the table of contents).
+
+######Another header, now with maths
+
+Perhaps you’re already really confused by the whole markdown thing. Maybe you’re so confused that you’ve forgotton how to add. Never fear!
+~~A calculator~~
+R is here:
+
+```{r}
+1231521+12341556280987
+```
+
+####Table Time
+
+Or maybe, after you’ve added those numbers, you feel like it’s about time for a table!
+I’m going to leave all the guts of the coding here so you can see how libraries (R packages) are loaded into R (more on that later). It’s not terribly pretty, but it hints at how R works and how you will use it in the future. The summary function used below is a nice data exploration function that you may use in the ^future^.
+
+```{r}
+library(knitr)
+kable(summary(cars),caption="I made this table with kable in the knitr package library")
+```
+
+And now you’ve almost finished your first RMarkdown! Feeling excited? We are! In fact, we’re so excited that maybe we need a big finale eh? Here’s ours! Include a fun gif of your choice!
+
+![ ](https://media.giphy.com/media/y5yzypjVc9u3S/giphy.gif)
 
 
 
@@ -159,14 +214,19 @@ Example Marine heterotrophs:
 
 
 * What is the relationship between carbon content, carbon assimilation efficiency and turnover rates in the upper 200m of the ocean? Why does this vary with depth in the ocean and between terrestrial and marine habitats?  
+The estimate of prokaryotic carbon in the upper 200m of ocean environment sets limits for the turnover rates in these population. In turn, the turn over rate can be determined based the carbon assimilation efficiency necessary for the carbon estimated content in the environment. This value varies with depth and different habitats because different environments support unique community of prokaryotes that have varying productivity and carbon assimilation efficiency, which  results in different turnover rates.  
+
+
 
 * How were the frequency numbers for four simultaneous mutations in shared genes determined for marine heterotrophs and marine autotrophs given an average mutation rate of 4 x 10^-7^ per DNA replication? (Provide an example of the calculation with units. Hint: cell and generation cancel out)  
+(4x10^(-7))^4 x 8.2x10^29 = 2.1x10^4 mutations/year
 
 * Given the large population size and high mutation rate of prokaryotic cells, what are the implications with respect to genetic diversity and adaptive potential? Are point mutations the only way in which microbial genomes diversify and adapt?  
 Large population size and high mutation rate can be considered a major source of genetic diversity and one of the essential factors that allows prokaryotes to first adapt , then evolve in different environments. While point mutations are common, they are not the only way to adapt. Other methods include horizontal transfer of genetic material between different prokaryotes.
 
 
-* What relationships can be inferred between prokaryotic abundance, diversity, and metabolic potential based on the information provided in the text? 
+* What relationships can be inferred between prokaryotic abundance, diversity, and metabolic potential based on the information provided in the text?  
+Prokaryote abundance creates an opportunity for frequent mutations and genetic material exchanges that allows adaptation of prokaryotes to different habitats. Adaptation to unique environments will eventually lead to divergence in metabolic potential and ultimately evolution and diversity.   
 
 
 
@@ -175,9 +235,12 @@ Utilize this space to include a bibliography of any literature you want associat
 
 An example for Whitman and Wiebe (1998) has been included below.
 
-Whitman WB, Coleman DC, and Wiebe WJ. 1998. Prokaryotes: The unseen majority. Proc Natl Acad Sci USA. 95(12):6578–6583.  [PMC33863](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)
+Whitman WB, Coleman DC, and Wiebe WJ. 1998. Prokaryotes: The unseen majority. Proc Natl Acad Sci USA. 95(12):6578-6583.  [PMC33863](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)
 
-### Evidence Worksheet_02 “Life and the Evolution of Earth’s Atmosphere”
+### Evidence Worksheet_02 Life and the Evolution of Earths Atmosphere
+
+[Nisbet *et al* 1998](https://www.nature.com/articles/35059210)
+
 #### Learning objectives: 
 Comment on the emergence of microbial life and the evolution of Earth systems
     
@@ -185,39 +248,136 @@ Comment on the emergence of microbial life and the evolution of Earth systems
 * Indicate the key events in the evolution of Earth systems at each approximate moment in the time series. If times need to be adjusted or added to the timeline to fully account for the development of Earth systems, please do so. 
 
     + 4.6 billion years ago  
+    - formation of the solar system  
+    - Inner planets recieved water vapour and carbon
+    - heavy meteroite bombardment
     
-    + 4.2 billion years ago  
+    + 4.5 billion years ago  
+    - moon was formed, it gave Earth its spin & tilt, day & night cycles, seasons  
+    
+    + 4.4 billion years ago  
+    - formation of Zircon (oldest mineral)
+    
+    + 4.2 billion years ago
+    
+    + 4.1 billion years ago  
+    - evidence of life present in Zircon
+    
+    + 4.0 billion years ago  
+    - oldest rock, Acasta gneiss 
+    - evidencec of plate subduction  
     
     + 3.8 billion years ago  
+    - meteorite bombardment halted  
+    - sea water chmistry stabilized  
+    - speculated to be the beginning of life  
+    - oldest known water-lain sedimentary rock found  
     
     + 3.75 billion years ago  
+    - early methanogenesis?  
     
     + 3.5 billion years ago  
+    - photosynthetic cyanobacteria evolved  
+    - evidence of Rubisco signature indicates global oxygenic photosynthesis  
+    - sulphate detected in rocks, signifies localized non-reducing conditions
     
     + 3.0 billion years ago  
+    - well-developed stromatolites  
+    - global glaciation  
     
     + 2.7 billion years ago  
+    - ancestral eukaryotes appeared
+    - endosymbiosis of mitochondria and chloroplasts?
     
     + 2.2 billion years ago  
+    - Great Oxidation Event, sharp increase of atmospheric oxygen   
     
     + 2.1 billion years ago
+    - First undisputed fossil evidence of cyanobacteria, and of photosynthesis  
+    
+    + 1.7 billion years ago  
+    - evolution of multicellular eukaryotes  
     
     + 1.3 billion years ago
+    - evidence for evolution of land fungi  
     
-    + 550,000 years ago
+    + 540 million years ago  
+    - Cambrian explosion  
     
-    + 200,000 years ago
+    + 480 million years ago
+    - Devonian explosion
+    - land plants appear  
+    
+    + 550,000 years ago  
+    
+    + 480,000 years ago  
+    
+    + 200,000 years ago  
+    - first appearance of *Homo sapiens*
 
 
 * Describe the dominant physical and chemical characteristics of Earth systems at the following waypoints:  
 
     + Hadean  
+    - molten Earth due to extreme volcanisms and frequent collisions  
+    - atmosphere consist of high water vapor, high carbon dioxide, nitrogen  
+    - early oceans produced by water vapour  
+    - moon-formation formed rock atmosphere  
+    - had a range of atmospheric temperatures, from 100C CO2-greenhouuse to glacial Ice-Hades with intervals of warm atmosphere after major impacts  
     
-    + Archean  
+    
+    + Archean 
+    - temperatures similar to modern day due to young faint sun hypothesis  
+    - has reducing atmosphere: H2O, CH4, H2 and NH3  
+    - intense UV without ozone  
+    - biochemicals that are the prerequisites for the origin of life present in Late Hadean
+    
     
     + Precambrian  
+    - glacial Earth known as Snowball Earth  
+    - atmosphere hypothesized to composed primarily of nitrogen, CH2 and other inert gases  
+    - some oxygen present but not in significant amounts  
     
     + Proterozoic  
+    - accumulation of oxygen in atmosphere  
     
     + Phanerozoic  
+    - abundant animal and plant life  
+    - normal amount of atmospheric oxygen comparable to today  
     
+    
+### Problem set_02 Microbial Enginess  
+
+[Falkowski *et al* 1998](https://www.ncbi.nlm.nih.gov/pubmed/18497287)  
+
+
+#### Learning objectives: 
+Discuss the role of microbial diversity and formation of coupled metabolism in driving global biogeochemical cycles.
+
+#### Specific Questions:
+* What are the primary geophysical and biogeochemical processes that create and sustain conditions for life on Earth? How do abiotic versus biotic processes vary with respect to matter and energy transformation and how are they interconnected?  
+Geophysical processes are tectonics and atmospheric photochemical processes continuously supply substrates and remove products to create geochemical cycles. Majority of abioitic geochemical reactions based on acid/base chemistry. Biogeochemical reactions are based on redox reactions. The biological fluxes of H, C, N, O, S are largely catalyzed by microbes with redox reactions.  
+The six major elements of life are H, C, N, O, S and P. The biological fluxes of H, C, N, O, S are largely catalyzed by microbes with redox reactions, while geological supply of C, S and P is dependent on tectonics, such as volcanism and rock weathering. Abiotic processes are mostly driven by acid/base reactions and biotic processes by redox reactions. In particular for Earth, the biological oxidation is driven by photosynthesis.  
+
+
+* Why is Earth's redox state considered an emergent property?  
+The biotic and abiotic processes altered the surface redox state of the planets. It is the feedbacks between the metabolic and geological processes that create the average redox condition of the oceans and atmosphere.   
+  
+
+* How do reversible electron transfer reactions give rise to element and nutrient cycles at different ecological scales? What strategies do microbes use to overcome thermodynamic barriers to reversible electron flow?  
+On a community scale such as methanogens, the redox process requires cooperation of multiple species. For example, methane is reduced from CO2 and H2 by methanogenic Archaea. Hydrogen-consuming sulfate reducers present in vicinity will reduce [hydrogen] and causes the reverse process to become thermodynamically favorable. The methane can then be oxidized by other species to release H2.  
+Whereas in a microbiological scale inside the cell, some cycles can be reversible, like the TCA. Some archaea can use TCA to both oxidize organic carbon into CO2 to release energy and also assimilate CO2 into organic matter by using energy. The energy produced from oxidation process can feed into the reductive process.  
+
+
+* Using information provided in the text, describe how the nitrogen cycle partitions between different redox niches and microbial groups. Is there a relationship between the nitrogen cycle and climate change?  
+![](https://i.imgur.com/2LMNfSh.png)
+
+* What is the relationship between microbial diversity and metabolic diversity and how does this relate to the discovery of new protein families from microbial community genomes?  
+usually metabolic pathways evolved to use substrates that are the end products of other types of microbial metabolism, suchc as heterotrophs using the organic carbon byproducts of photosynthesis. Early cellular evolution included horizontal gene transfer as the principle mode of evolution. The genes responsible for major metabolic processes or entire metabolic pathways have probably been distributedin a common gene pool before further differentiation of species. Afterwards, nutritional and bioenergetic selective pressures drive the retention of these horizontally transferred genes. 
+
+* On what basis do the authors consider microbes the guardians of metabolism?  
+microbes can maintain genes for metabolism through HGT. Even if one community becomes extinct, the wide-spread distribution of these genes across many communities and niches will allow the metabolic pathways to be preserved.  
+
+### Module 02 references  
+Nisbet EG and Sleep NH. 2001. The habitat and nature of early life. Nature. 409(6823):1083-1091. [PMID11234022](https://www.nature.com/articles/35059210)  
+Falkowski PG, Fenchel T, and Delong EF. 2008. The microbial engines that drive Earth's biogeochemical cycles. Science. 320(5879):1034-1039. [PMID18497287](https://www.ncbi.nlm.nih.gov/pubmed/18497287)
