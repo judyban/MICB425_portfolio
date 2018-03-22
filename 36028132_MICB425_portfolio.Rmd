@@ -855,7 +855,7 @@ Differentiate between mobile elements and different modes of gene transfer.
 
 
 
-### Module 02 references
+### Module 03 references
 
 Welch RA, Burland V, Plunkett II G, Redford P, Roesche P, Rasko D, Buckles EL...Blattner FR. 2002. Extensive mosaic structure revealed by the complete genome sequence of uropathogenic Escherichia coli. Proc Natl Acad Sci USA. 99(26):17020-4 [PMC139262](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC139262/)
 
