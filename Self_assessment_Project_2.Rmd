@@ -1,0 +1,56 @@
+---
+title: "Project self-assessment of contributions"
+subtitle: "2018 Term 2 - MICB425"
+output: html_document
+---
+To facilitate group assessment, please indicate your contributions to the following aspects of your final group reports. You should provide short statements under the headers relevant to your work. For example, you could specify that you "wrote the first draft", "wrote the code to accomplish X figure or result", "troubleshot code", "interpreted results", etc.
+
+Include **separate** completed versions of this document for Project 1 **and** Project 2 in your portfolio repo; they do not need to be incorporated into the final knit portfolio html.
+
+## Abstract
+### Writing
+
+### Editing
+Edited the Abstract
+
+## Introduction
+### Literature research
+
+### Writing
+
+### Editing
+Added citations and organized the reference list
+
+## Methods
+### Writing
+
+### Editing
+Added citations and organized the reference list
+
+
+## Results
+### Anaysis 
+
+### Figures
+Generated Figures 6 (relative abundance plot) and 7 (all phylogenetic trees) from TreeSAPP outputs  
+
+### Writing
+Interpreted data and wrote figure legends for figures 6 and 7, as well as the summary after figure 7  
+
+
+### Editing
+Added citations and organized the reference list
+
+
+## Discussion
+### Literature research
+Conducted literature research on relationship between nirS expression and the relative abundances of organisms at various depths  
+
+
+### Writing
+Wrote the third paragraph analyzing the relationship between nirS expression and the relative abundances of organisms at each depth  
+
+
+### Editing
+Added citations and organized the reference list
+

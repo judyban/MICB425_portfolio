@@ -1,0 +1,57 @@
+---
+title: "Project self-assessment of contributions"
+subtitle: "2018 Term 2 - MICB425"
+output: html_document
+---
+To facilitate group assessment, please indicate your contributions to the following aspects of your final group reports. You should provide short statements under the headers relevant to your work. For example, you could specify that you "wrote the first draft", "wrote the code to accomplish X figure or result", "troubleshot code", "interpreted results", etc.
+
+Include **separate** completed versions of this document for Project 1 **and** Project 2 in your portfolio repo; they do not need to be incorporated into the final knit portfolio html.
+
+## Abstract
+### Writing
+
+### Editing
+
+
+## Introduction
+### Literature research
+
+### Writing
+
+### Editing
+Edited the introduction 
+
+## Methods
+### Writing
+
+### Editing
+
+
+## Results
+### Anaysis 
+Performed linear model analysis in R, on how each OTU or ASV differs in abundance with depth and oxygen concentration for all OTUs and ASVs  
+
+
+### Figures
+Generated four figures  
+    * Dot graph: the Abundance of OTUs within Sulfurimonas genous across depth  
+    * Dot graph: the Abundance of ASVs within Sulfurimonas genous across depth  
+    * Multipanel line graph: the Abundance of OTUs within Sulfurimonas genous across depth  
+    * Multipanel line graph: the Abundance of ASVs within Sulfurimonas genous across depth    
+    * (Only the dot graphs were included in the final draft, all four graphs were used in the first draft)    
+    
+### Writing
+Wrote the figure legends for all four figures mentioned above
+### Editing
+
+
+## Discussion
+### Literature research
+Performed literature research on implications of potential differences in pipelines for microbial ecology research and discovery
+### Writing
+Wrote the second point of discussion, answering "What are the implications of potential differences in pipelines for microbial ecology research and discovery?".  
+Wrote a portion of future directions.
+
+
+### Editing
+
