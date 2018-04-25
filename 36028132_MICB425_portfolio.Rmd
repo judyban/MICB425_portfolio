@@ -7,80 +7,6 @@ output:
     toc: true
 ---
 # Module 01
-    
-## Data science Friday  
-The remaining second level headers (##) are for separating data science Friday, regular course, and project content. In this module, you will only need to include data science Friday and regular course content; projects will come later in the course.
-
-### Installation check
-Third level headers (###) should be used for links to assignments, evidence worksheets, problem sets, and readings, as seen here.  
-
-Use this space to include your installation screenshots.  
-![Windows GitBash Terminal](https://i.imgur.com/0B08Rxn.png)  
-
-![RStudio](https://i.imgur.com/hnKO3b9.png)  
-
-![GitHub homepage](https://i.imgur.com/F7WjXIP.png)
-
-
-
-
-### Portfolio repo setup
-Detail the code you used to create, initialize, and push your portfolio repo to GitHub. This will be helpful as you will need to repeat many of these steps to update your porfolio throughout the course.
-
-starting from after registering for a new GitHub account  
-1. git init  
-2. git add .  
-3. git commit -m "First commit"  
-4. git remote add origin https://github.com/judyban/MICB425_portfolio  
-5. git remote -v  
-6. git push -u origin master  
-
-Repeat steps 2, 3 and git push to push new materials into the repository  
-
-
-### RMarkdown pretty html challenge
-
-The following assignment is an exercise for the reproduction of this .html document using the RStudio and RMarkdown tools we've shown you in class. Hopefully by the end of this, you won't feel at all the way this poor PhD student does. We're here to help, and when it comes to R, the internet is a really valuable resource. This open-source program has all kinds of tutorials online.
-![ ](http://www.phdcomics.com/comics/archive/phd011718s.gif)  
-[http://phdcomics.com/](http://phdcomics.com/)
-Comic posted 1-17-2018
-
-####Challenge Goals
-
-The goal of this R Markdown html challenge is to give you an opportunity to play with a bunch of different RMarkdown formatting. Consider it a chance to flex your RMarkdown muscles. Your goal is to write your own RMarkdown that rebuilds this html document as close to the original as possible. So, yes, this means you get to copy my irreverant tone exactly in your own Markdowns. It's a little window into my psyche. Enjoy =)
-
-**hint: go to the [PhD Comics website](http://phdcomics.com/) to see if you can find the image above**  
-*If you can't find that exact image, just find a comparable image from the PhD Comics website and include it in your markdown*
-
-#####Here's a header!
-
-Let's be honest, this header is a little arbitrary. But show me that you can reproduce headers with different levels please. This is a level 3 header, for your reference (you can most easily tell this from the table of contents).
-
-######Another header, now with maths
-
-Perhaps you're already really confused by the whole markdown thing. Maybe you're so confused that you've forgotton how to add. Never fear!
-~~A calculator~~
-R is here:
-
-```{r}
-1231521+12341556280987
-```
-
-####Table Time
-
-Or maybe, after you've added those numbers, you feel like it's about time for a table!
-I'm going to leave all the guts of the coding here so you can see how libraries (R packages) are loaded into R (more on that later). It's not terribly pretty, but it hints at how R works and how you will use it in the future. The summary function used below is a nice data exploration function that you may use in the ^future^.
-
-```{r}
-library(knitr)
-kable(summary(cars),caption="I made this table with kable in the knitr package library")
-```
-
-And now you've almost finished your first RMarkdown! Feeling excited? We are! In fact, we're so excited that maybe we need a big finale eh? Here's ours! Include a fun gif of your choice!
-
-![ ](https://media.giphy.com/media/y5yzypjVc9u3S/giphy.gif)
-
-
 
 ## Origins and Earth Systems
 ### Evidence worksheet 01 
@@ -119,81 +45,6 @@ There were also questions arised from these uncertainties, such as how does prok
     + Conclusions:  
         - The results were impactful, there was evidence presented from a variety of primary literature to support the conclusion.  
         - The figures and tables were straightforward and easy to understand.  
-
-
-### Problem set 01  
-[Whitman *et al* 1998](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)  
-
-#### Learning objectives: 
-Describe the numerical abundance of microbial life in relation to the ecology and biogeochemistry of Earth systems.
-
-#### Specific questions:
-* What are the primary prokaryotic habitats on Earth and how do they vary with respect to their capacity to support life? Provide a breakdown of total cell abundance for each primary habitat from the tables provided in the text.    
-
-Primary Habitats | Total Cell Abundance
----------------- | --------------
-Open ocean       |  $1.2*10^{29}$
-Soil             |   $2.6*10^{29}$  
-Subsurface       |   $3.8*10^{30}$
-Oceanic subsurface|   $3.5*10^{30}$
-Terrestrial subsurface|   $0.25*10^{30}$ to $2.3*10^{30}$
-
-* What is the estimated prokaryotic cell abundance in the upper 200 m of the ocean and what fraction of this biomass is represented by marine cyanobacterium including *Prochlorococcus*? What is the significance of this ratio with respect to carbon cycling in the ocean and the atmospheric composition of the Earth?  
-
-    + The estimated prokaryotic cell abundance in the upper 200 m of the ocean is 3.6 x 10^28, cell density is 5 x 10^5 CFUs/mL. Cyanobacteria has density of 4 x 10^4 cells/ml. 8% of total prokaryotic cell abundance is represented by marine cyanobacterium including *Procholorococcus*.  Since they are autotrophs, they are the major players in driving one part of the carbon cycle by assimilating inorganic carbon into organic carbon through photosynthesis. They also drive the food web by being at the bottom of it and serving as primary producers.  
-
-* What is the difference between an autotroph, heterotroph, and a lithotroph based on information provided in the text?  
-
-    + Autotroph -- "self-nourishing" -- uses inorganic carbon to produce complex organic carbon as a source of carbon for other organotrophs (fixing CO2 into biomass).  
-
-    + Heterotroph -- uses organic carbon assimilated by autotrophs as sources of carbon. Assimilate organic carbon.   
-
-    + Lithotroph -- technically obtains electron sources from inorganic chemicals, they can use material other than inorganic carbon to obtain reducing agents. Use inorganic substrates.  
-
-
-* Based on information provided in the text and your knowledge of geography what is the deepest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this depth?  
-
-    + The deepest habitat is oceanic subsurface that goes below ground up to 4 km. At increasing depth, high temperature of 125C, becomes a primary limiting factor to prokaryotic life. Change in temperature is about an increase of 22C/km.  
-
-
-* Based on information provided in the text your knowledge of geography what is the highest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this height?  
-
-    + The highest place prokaryotes can be found is 77km, but most bacteria found up there were transferred there instead of being native inhabitants. Realistic habitats is around 20km. I predict that most of them would be spore-forming bacteria due to desiccation and limited nutrients.
-While the paper did not provide a clear answer to the limiting factor, a thinning of atmospheric gasses at high altitudes limits the abundance of nutrients that can be provided for prokaryote uptake. In addition to a lack of moisture in the upper atmosphere that could lead to desiccation, UV is also a strong factor preventing life at that altitude.
-
-
-* Based on estimates of prokaryotic habitat limitation, what is the vertical distance of the Earth's biosphere measured in km?  
-
-    + 20km (atmospheric) + 4km (subsurface) = 24km  
-
-* How was annual cellular production of prokaryotes described in Table 7 column four determined? (Provide an example of the calculation)  
-
-    + (Population size) x (# of turnovers/year) = cells/year  
-    + Example Marine heterotrophs:  
-        - $3.6\times10^{28} cells \times \frac{365 days per year}{16 turnovers} = 8.2\times10^{29} \frac{cells}{year}$  
-
-
-* What is the relationship between carbon content, carbon assimilation efficiency and turnover rates in the upper 200m of the ocean? Why does this vary with depth in the ocean and between terrestrial and marine habitats?  
-
-    + The equations were typed in excel due to lack of experience with LaTex. The screen shot of the equations is pasted here.
-![](https://i.imgur.com/ejqLDmM.png)  
-
-
-* How were the frequency numbers for four simultaneous mutations in shared genes determined for marine heterotrophs and marine autotrophs given an average mutation rate of 4 x 10^-7^ per DNA replication? (Provide an example of the calculation with units. Hint: cell and generation cancel out)  
-
-    + ${\big({4\times10^7}\big)^4}  \times  {8.2\times10^{29}} = {2.1\times10^4} \frac{mutations}{year}$
-
-![](https://i.imgur.com/lgUXocs.png)  
-
-
-
-* Given the large population size and high mutation rate of prokaryotic cells, what are the implications with respect to genetic diversity and adaptive potential? Are point mutations the only way in which microbial genomes diversify and adapt?  
-
-    + Large population size and high mutation rate can be considered a major source of genetic diversity and one of the essential factors that allows prokaryotes to first adapt , then evolve in different environments. While point mutations are common, they are not the only way to adapt. Other methods include horizontal transfer of genetic material between different prokaryotes.
-
-
-* What relationships can be inferred between prokaryotic abundance, diversity, and metabolic potential based on the information provided in the text?  
-    + Prokaryote abundance creates an opportunity for frequent mutations and genetic material exchanges, as seen in the upper 200m of marine habitat that has higher genetic diversity than in domestic animeals. The high diversity allows adaptation of prokaryotes to different habitats, which is demonstrated in open ocean prokaryotes having higher adaptive potential than those in soil, subsurface and domestic animals. Adaptation to unique environments will eventually lead to divergence in metabolic potential and ultimately evolution and diversity.   
 
 
 ### Evidence Worksheet 02 
@@ -299,6 +150,122 @@ Comment on the emergence of microbial life and the evolution of Earth systems
     + Phanerozoic  
         - abundant animal and plant life  
         - normal amount of atmospheric oxygen comparable to today  
+        
+
+### Evidence Worksheet 03 
+
+[Rockstrom *et al* 2009](https://www.nature.com/articles/461472a)  
+
+#### Learning objectives: 
+Evaluate human impacts on the ecology and biogeochemistry of Earth systems.
+
+#### General questions
+* What were the main questions being asked?  
+
+    + What are the key variables, or the planet's biophysical subsystems or processes, that are negatively affected by human operation?  
+    + How can we define the parameters and threshold for each planetary boundary that acts as guidelines for safe operating space for humanity? 
+    + How far has humanity pushed each of the planetary boundaries and what are the consequences?  
+    
+    
+* What were the primary methodological approaches used?  
+    +	Planetary boundaries are determined by values for control variables that are either a "safe" distance from thresholds by looking at evidence of threshold behavior of certain processes, or at dangerous levels for processes that do not have a well-defined threshold. The large uncertainties surrounding the true threshold is taken into consideration. A safe distance is determined by involving normative judgements of how societies choose to deal with risk and uncertainty.
+
+* Summarize the main results or findings.  
+    + The nine planetary boundaries defined were: atmospheric aerosol loading, chemical pollution, climate change, ocean acidification, stratospheric ozone depletion, nitrogen and phosphorus cycle, global freshwater use, change in land use, biodiversity loss.
+    + Three of the Earth-system processes have already transgressed their boundaries, and their continued deterioration will significantly impact the resilience of major components of Earth-system functioning.They are: 
+        - Climate change
+        - Biodiversity loss
+        - Interference with the nitrogen cycle
+    + Climate change: the current CO2 concentration has transgressed past the boundary due to underestimation of the long-term effects of greenhouse gases and may lead to long-term irreversible climate change such as loss of major ice sheets, accelerated sea level rise and shifts in biological systems
+    + Rate of biodiversity loss: the Anthropocene has accelerated the rate of extinction of species to 100-1000 times more than the natural process, mainly due to loss of habitats from changes in land use and speed of climate change
+    + Nitrogen and phosphorus cycles: additional input of nitrogen and phosphorus from human large-scale production has begun to significantly disturb their global cycles  
+    
+    
+* Do new questions arise from the results?  
+    + The parameters and boundary of biodiversity, human modification of the nitrogen cycle is vague, more research is required to pin down this boundary with greater certainty
+    + More understanding of the essential Earth processes and human actions are needed in order to push global change research and sustainability science
+    + Exploration into the complex dynamic interactions and self-regulation of living systems is also required to better appreciate thresholds and shifts between states. This will help us realize the severity of environmental conditions. 
+
+* Were there any specific challenges or advantages in understanding the paper (*e.g.* did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?  
+    + The paper is written in a way that is easy to understand, and the figures are well represented and explained in relation to the analysis. Although the methods of defining the boundaries and threshold were explained inadequately for biodiversity and nitrogen cycle, the authors did emphasize the uncertainty in the definitions of boundaries used in the paper. Yes, there were assumptions made when the authors speculated the long-term consequences of transgressing the threshold of the boundaries. However, I believe the conclusions are largely justified as the paper gathered quantitative evidence from a variety of sources detailing how has human actions altered the Earth's natural cycles.  
+
+
+### Problem set 01  
+[Whitman *et al* 1998](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)  
+
+#### Learning objectives: 
+Describe the numerical abundance of microbial life in relation to the ecology and biogeochemistry of Earth systems.
+
+#### Specific questions:
+* What are the primary prokaryotic habitats on Earth and how do they vary with respect to their capacity to support life? Provide a breakdown of total cell abundance for each primary habitat from the tables provided in the text.    
+
+Primary Habitats | Total Cell Abundance
+---------------- | --------------
+Open ocean       |  $1.2*10^{29}$
+Soil             |   $2.6*10^{29}$  
+Subsurface       |   $3.8*10^{30}$
+Oceanic subsurface|   $3.5*10^{30}$
+Terrestrial subsurface|   $0.25*10^{30}$ to $2.3*10^{30}$
+
+* What is the estimated prokaryotic cell abundance in the upper 200 m of the ocean and what fraction of this biomass is represented by marine cyanobacterium including *Prochlorococcus*? What is the significance of this ratio with respect to carbon cycling in the ocean and the atmospheric composition of the Earth?  
+
+    + The estimated prokaryotic cell abundance in the upper 200 m of the ocean is 3.6 x 10^28, cell density is 5 x 10^5 CFUs/mL. Cyanobacteria has density of 4 x 10^4 cells/ml. 8% of total prokaryotic cell abundance is represented by marine cyanobacterium including *Procholorococcus*.  Since they are autotrophs, they are the major players in driving one part of the carbon cycle by assimilating inorganic carbon into organic carbon through photosynthesis. They also drive the food web by being at the bottom of it and serving as primary producers.  
+
+* What is the difference between an autotroph, heterotroph, and a lithotroph based on information provided in the text?  
+
+    + Autotroph -- "self-nourishing" -- uses inorganic carbon to produce complex organic carbon as a source of carbon for other organotrophs (fixing CO2 into biomass).  
+
+    + Heterotroph -- uses organic carbon assimilated by autotrophs as sources of carbon. Assimilate organic carbon.   
+
+    + Lithotroph -- technically obtains electron sources from inorganic chemicals, they can use material other than inorganic carbon to obtain reducing agents. Use inorganic substrates.  
+
+
+* Based on information provided in the text and your knowledge of geography what is the deepest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this depth?  
+
+    + The deepest habitat is oceanic subsurface that goes below ground up to 4 km. At increasing depth, high temperature of 125C, becomes a primary limiting factor to prokaryotic life. Change in temperature is about an increase of 22C/km.  
+
+
+* Based on information provided in the text your knowledge of geography what is the highest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this height?  
+
+    + The highest place prokaryotes can be found is 77km, but most bacteria found up there were transferred there instead of being native inhabitants. Realistic habitats is around 20km. I predict that most of them would be spore-forming bacteria due to desiccation and limited nutrients.
+While the paper did not provide a clear answer to the limiting factor, a thinning of atmospheric gasses at high altitudes limits the abundance of nutrients that can be provided for prokaryote uptake. In addition to a lack of moisture in the upper atmosphere that could lead to desiccation, UV is also a strong factor preventing life at that altitude.
+
+
+* Based on estimates of prokaryotic habitat limitation, what is the vertical distance of the Earth's biosphere measured in km?  
+
+    + 20km (atmospheric) + 4km (subsurface) = 24km  
+
+* How was annual cellular production of prokaryotes described in Table 7 column four determined? (Provide an example of the calculation)  
+
+    + (Population size) x (# of turnovers/year) = cells/year  
+    + Example Marine heterotrophs:  
+        - $3.6\times10^{28} cells \times \frac{365 days per year}{16 turnovers} = 8.2\times10^{29} \frac{cells}{year}$  
+
+
+* What is the relationship between carbon content, carbon assimilation efficiency and turnover rates in the upper 200m of the ocean? Why does this vary with depth in the ocean and between terrestrial and marine habitats?  
+
+    + The equations were typed in excel due to lack of experience with LaTex. The screen shot of the equations is pasted here.
+![](https://i.imgur.com/ejqLDmM.png)  
+
+
+* How were the frequency numbers for four simultaneous mutations in shared genes determined for marine heterotrophs and marine autotrophs given an average mutation rate of 4 x 10^-7^ per DNA replication? (Provide an example of the calculation with units. Hint: cell and generation cancel out)  
+
+    + ${\big({4\times10^7}\big)^4}  \times  {8.2\times10^{29}} = {2.1\times10^4} \frac{mutations}{year}$
+
+![](https://i.imgur.com/lgUXocs.png)  
+
+
+
+* Given the large population size and high mutation rate of prokaryotic cells, what are the implications with respect to genetic diversity and adaptive potential? Are point mutations the only way in which microbial genomes diversify and adapt?  
+
+    + Large population size and high mutation rate can be considered a major source of genetic diversity and one of the essential factors that allows prokaryotes to first adapt , then evolve in different environments. While point mutations are common, they are not the only way to adapt. Other methods include horizontal transfer of genetic material between different prokaryotes.
+
+
+* What relationships can be inferred between prokaryotic abundance, diversity, and metabolic potential based on the information provided in the text?  
+    + Prokaryote abundance creates an opportunity for frequent mutations and genetic material exchanges, as seen in the upper 200m of marine habitat that has higher genetic diversity than in domestic animeals. The high diversity allows adaptation of prokaryotes to different habitats, which is demonstrated in open ocean prokaryotes having higher adaptive potential than those in soil, subsurface and domestic animals. Adaptation to unique environments will eventually lead to divergence in metabolic potential and ultimately evolution and diversity.   
+
+
+
     
     
 ### Problem set 02   
@@ -340,42 +307,6 @@ Metabolic diversity can be obtained through evolution or horizontal gene transfe
     + Microbes can maintain genes for metabolism through HGT. Even if one community becomes extinct, the wide-spread distribution of these genes across many communities and niches will allow the metabolic pathways to be preserved.  
 
 
-### Evidence Worksheet 03 
-
-[Rockstrom *et al* 2009](https://www.nature.com/articles/461472a)  
-
-#### Learning objectives: 
-Evaluate human impacts on the ecology and biogeochemistry of Earth systems.
-
-#### General questions
-* What were the main questions being asked?  
-
-    + What are the key variables, or the planet's biophysical subsystems or processes, that are negatively affected by human operation?  
-    + How can we define the parameters and threshold for each planetary boundary that acts as guidelines for safe operating space for humanity? 
-    + How far has humanity pushed each of the planetary boundaries and what are the consequences?  
-    
-    
-* What were the primary methodological approaches used?  
-    +	Planetary boundaries are determined by values for control variables that are either a "safe" distance from thresholds by looking at evidence of threshold behavior of certain processes, or at dangerous levels for processes that do not have a well-defined threshold. The large uncertainties surrounding the true threshold is taken into consideration. A safe distance is determined by involving normative judgements of how societies choose to deal with risk and uncertainty.
-
-* Summarize the main results or findings.  
-    + The nine planetary boundaries defined were: atmospheric aerosol loading, chemical pollution, climate change, ocean acidification, stratospheric ozone depletion, nitrogen and phosphorus cycle, global freshwater use, change in land use, biodiversity loss.
-    + Three of the Earth-system processes have already transgressed their boundaries, and their continued deterioration will significantly impact the resilience of major components of Earth-system functioning.They are: 
-        - Climate change
-        - Biodiversity loss
-        - Interference with the nitrogen cycle
-    + Climate change: the current CO2 concentration has transgressed past the boundary due to underestimation of the long-term effects of greenhouse gases and may lead to long-term irreversible climate change such as loss of major ice sheets, accelerated sea level rise and shifts in biological systems
-    + Rate of biodiversity loss: the Anthropocene has accelerated the rate of extinction of species to 100-1000 times more than the natural process, mainly due to loss of habitats from changes in land use and speed of climate change
-    + Nitrogen and phosphorus cycles: additional input of nitrogen and phosphorus from human large-scale production has begun to significantly disturb their global cycles  
-    
-    
-* Do new questions arise from the results?  
-    + The parameters and boundary of biodiversity, human modification of the nitrogen cycle is vague, more research is required to pin down this boundary with greater certainty
-    + More understanding of the essential Earth processes and human actions are needed in order to push global change research and sustainability science
-    + Exploration into the complex dynamic interactions and self-regulation of living systems is also required to better appreciate thresholds and shifts between states. This will help us realize the severity of environmental conditions. 
-
-* Were there any specific challenges or advantages in understanding the paper (*e.g.* did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?  
-    + The paper is written in a way that is easy to understand, and the figures are well represented and explained in relation to the analysis. Although the methods of defining the boundaries and threshold were explained inadequately for biodiversity and nitrogen cycle, the authors did emphasize the uncertainty in the definitions of boundaries used in the paper. Yes, there were assumptions made when the authors speculated the long-term consequences of transgressing the threshold of the boundaries. However, I believe the conclusions are largely justified as the paper gathered quantitative evidence from a variety of sources detailing how has human actions altered the Earth's natural cycles.  
 
 
 ### Writing assessment 01
@@ -388,7 +319,7 @@ For billions of years, microbial life drove the establishment of Earth's biogeoc
 **Microbial influence on altering Earth's atmosphere and biogeochemical landscapes**  
 
 
-Microbial life has intimately provided metabolic processes that drives Earth's atmosphere and geochemical landscape for the survival of humans. The earliest evidence of microbial activity was present at least 3.5 billion years ago (Gya) (1), derived from stable carbon-isotope and sulfur-isotope fractionation that suggested possible sulfate reduction and methanogenesis (2). Along with volcanic release of mantle gasses, these methanogenic bacteria have in part contributed to an anoxic early earth atmosphere rich in carbon dioxide and methane (2). The greenhouse-effect from atmospheric methane was speculated to have prevented a glacial Earth under the faint young sun, with only one third of solar radiation than the modern sun (3). Even in our modern atmosphere, micro-organisms such as methanogens continue to contribute to the trace gases, whose sources are almost entirely biological (4). Approximately 2.45 Gya, oxygenic photosynthesis performed by cyanobacteria lead to an initial rise in atmospheric oxygen. Specifically, the removal of carbon from the buried organic matter in sediments by oxygenic phototrophy produced oxygen, which cannot re-enter the marine carbon cycle and thus remained in the atmosphere (4). These microbes produced rapid rise of atmospheric oxygen as by-products, and lead to the Great Oxidation Event (1). The rapidly rising reactive oxygen species in the oxygenated atmosphere were toxic to most anaerobes, and resulted in mass extinction of anaerobic niches (3). This selective pressure aided the widespread establishment of aerobic microorganisms, and ultimately paved way for the evolution of complex organisms today. The microbial catalysis of geochemical processes as a by-product of their metabolism have played an important role in shaping the environment in which we currently live in.  
+Microbial life has intimately provided metabolic processes that drives Earth's atmosphere and geochemical landscape for the survival of humans. The earliest evidence of microbial activity was present at least 3.5 billion years ago (Gya) (1), derived from stable carbon-isotope and sulfur-isotope fractionation that suggested possible sulfate reduction and methanogenesis (2). Along with volcanic release of mantle gasses, these methanogenic bacteria have in part contributed to an anoxic early earth atmosphere rich in carbon dioxide and methane (2). The greenhouse-effect from atmospheric methane was speculated to have prevented a glacial Earth under the faint young sun, with only one third of solar radiation than the modern sun (3). Even in our modern atmosphere, micro-organisms such as methanogens continue to contribute to the trace gases, whose sources are almost entirely biological (4). Approximately 2.45 Gya, oxygenic photosynthesis performed by *Cyanobacteria* lead to an initial rise in atmospheric oxygen. Specifically, the removal of carbon from the buried organic matter in sediments by oxygenic phototrophy produced oxygen, which cannot re-enter the marine carbon cycle and thus remained in the atmosphere (4). These microbes produced rapid rise of atmospheric oxygen as by-products, and lead to the Great Oxidation Event (1). The rapidly rising reactive oxygen species in the oxygenated atmosphere were toxic to most anaerobes, and resulted in mass extinction of anaerobic niches (3). This selective pressure aided the widespread establishment of aerobic microorganisms, and ultimately paved way for the evolution of complex organisms today. The microbial catalysis of geochemical processes as a by-product of their metabolism have played an important role in shaping the environment in which we currently live in.  
 
 
 **Industrial replacement of microbial processes lead to disruptions of biogeochemical cycle**  
@@ -398,7 +329,7 @@ The rapidly increasing human population and technological leaps have triggered a
 
 **The role of microbes in biogeochemical cycles as a solution to environmental disruptions**  
 
-The industrial processes implemented to supplement microbial metabolism have wrecked havoc on the natural biogeochemical cycles, and humans must turn to microbes to re-establish a balanced biogeochemical system. Despite earlier mentions of human industrial processes, microbes today continue to support human sustainability through reduction-oxidation (redox) reactions. They work with abiotic processes to maintain the balance of the six major bio-elements, hydrogen (H), carbon (C), nitrogen (N), oxygen (O), sulfur (S) and phosphorus (P) (2). Of all the biogeochemical cycles, the nitrogen cycle is the only one that is entirely biologically driven (2). The biological N cycle is balanced by five different reactions - nitrogen fixation, nitrification, anammox, denitrification and ammonification, which are all maintained by the synergistic cooperation of multiple microbes (8). Without human intervention, nitrogen fixation is the only biological process that converts N2 into ammonium (NH4+), which is carried out by certain microbes expressing enzyme nitrogenase. In agriculture, legume plants form symbiotic associations with some nitrogen-fixing species of Rhizobium, for accessible forms of N used in proteins and nucleic acids synthesis (8). NH4+ can be oxidized back into nitrate in a two-step nitrification pathway, then denitrification converts the product into N2 to complete the nitrogen cycle (8). As nitrogenase is highly sensitive to oxygen, each step of the cycle is catalyzed by specific group of bacteria in the presence of oxygen, and they work synergistically to maintain balance in the input and output of global nitrogen resources (2). Modern agriculture is a major case of environmental pollution, there is a need for more sustainable solutions to nitrogen fertilizer use. Humans have used techniques such as intercropping and crop rotation to help naturally increase nitrogen content of the soil, but these methods are time consuming (8). Scientists are now looking at biological engineering to introduce nitrogen-fixing microbial metabolism to non-legume crops, in order to reduce the requirement for exogenous fertilization (9). Currently there are two strategic approaches in non-legume plants: investigation of non-legume nitrogen-fixing bacteria, and genetic engineering of signalling pathway to create a rhizobium-friendly environment in the plant nodules (9). With biological nitrogen sources, microbes can balance the natural feedback system in a more constrained manner, to produce a new steady state of the N cycle over time (3). Thus, microbes have not only improved human quality of life, they may also be the solution to ensure planetary and human sustainability.
+The industrial processes implemented to supplement microbial metabolism have wrecked havoc on the natural biogeochemical cycles, and humans must turn to microbes to re-establish a balanced biogeochemical system. Despite earlier mentions of human industrial processes, microbes today continue to support human sustainability through reduction-oxidation (redox) reactions. They work with abiotic processes to maintain the balance of the six major bio-elements, hydrogen (H), carbon (C), nitrogen (N), oxygen (O), sulfur (S) and phosphorus (P) (2). Of all the biogeochemical cycles, the nitrogen cycle is the only one that is entirely biologically driven (2). The biological N cycle is balanced by five different reactions - nitrogen fixation, nitrification, anammox, denitrification and ammonification, which are all maintained by the synergistic cooperation of multiple microbes (8). Without human intervention, nitrogen fixation is the only biological process that converts N2 into ammonium (NH4+), which is carried out by certain microbes expressing enzyme nitrogenase. In agriculture, legume plants form symbiotic associations with some nitrogen-fixing species of *Rhizobium*, for accessible forms of N used in proteins and nucleic acids synthesis (8). NH4+ can be oxidized back into nitrate in a two-step nitrification pathway, then denitrification converts the product into N2 to complete the nitrogen cycle (8). As nitrogenase is highly sensitive to oxygen, each step of the cycle is catalyzed by specific group of bacteria in the presence of oxygen, and they work synergistically to maintain balance in the input and output of global nitrogen resources (2). Modern agriculture is a major case of environmental pollution, there is a need for more sustainable solutions to nitrogen fertilizer use. Humans have used techniques such as intercropping and crop rotation to help naturally increase nitrogen content of the soil, but these methods are time consuming (8). Scientists are now looking at biological engineering to introduce nitrogen-fixing microbial metabolism to non-legume crops, in order to reduce the requirement for exogenous fertilization (9). Currently there are two strategic approaches in non-legume plants: investigation of non-legume nitrogen-fixing bacteria, and genetic engineering of signalling pathway to create a rhizobium-friendly environment in the plant nodules (9). With biological nitrogen sources, microbes can balance the natural feedback system in a more constrained manner, to produce a new steady state of the N cycle over time (3). Thus, microbes have not only improved human quality of life, they may also be the solution to ensure planetary and human sustainability.
 
 
 **Conclusion**  
@@ -459,7 +390,77 @@ Waters, CN, Zalasiewicz, J, Summerhayes, C, Barnosky, AD, Poirier, C, Galuszka, 
 
 Whitman WB, Coleman DC, and Wiebe WJ. 1998. Prokaryotes: The unseen majority. Proc Natl Acad Sci USA. 95(12):6578-6583.  [PMC33863](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)  
 
+## Data science Friday  
+The remaining second level headers (##) are for separating data science Friday, regular course, and project content. In this module, you will only need to include data science Friday and regular course content; projects will come later in the course.
 
+### Installation check
+Third level headers (###) should be used for links to assignments, evidence worksheets, problem sets, and readings, as seen here.  
+
+Use this space to include your installation screenshots.  
+![Windows GitBash Terminal](https://i.imgur.com/0B08Rxn.png)  
+
+![RStudio](https://i.imgur.com/hnKO3b9.png)  
+
+![GitHub homepage](https://i.imgur.com/F7WjXIP.png)
+
+
+
+
+### Portfolio repo setup
+Detail the code you used to create, initialize, and push your portfolio repo to GitHub. This will be helpful as you will need to repeat many of these steps to update your porfolio throughout the course.
+
+starting from after registering for a new GitHub account  
+1. git init  
+2. git add .  
+3. git commit -m "First commit"  
+4. git remote add origin https://github.com/judyban/MICB425_portfolio  
+5. git remote -v  
+6. git push -u origin master  
+
+Repeat steps 2, 3 and git push to push new materials into the repository  
+
+
+### RMarkdown pretty html challenge
+
+The following assignment is an exercise for the reproduction of this .html document using the RStudio and RMarkdown tools we've shown you in class. Hopefully by the end of this, you won't feel at all the way this poor PhD student does. We're here to help, and when it comes to R, the internet is a really valuable resource. This open-source program has all kinds of tutorials online.
+![ ](http://www.phdcomics.com/comics/archive/phd011718s.gif)  
+[http://phdcomics.com/](http://phdcomics.com/)
+Comic posted 1-17-2018
+
+####Challenge Goals
+
+The goal of this R Markdown html challenge is to give you an opportunity to play with a bunch of different RMarkdown formatting. Consider it a chance to flex your RMarkdown muscles. Your goal is to write your own RMarkdown that rebuilds this html document as close to the original as possible. So, yes, this means you get to copy my irreverant tone exactly in your own Markdowns. It's a little window into my psyche. Enjoy =)
+
+**hint: go to the [PhD Comics website](http://phdcomics.com/) to see if you can find the image above**  
+*If you can't find that exact image, just find a comparable image from the PhD Comics website and include it in your markdown*
+
+#####Here's a header!
+
+Let's be honest, this header is a little arbitrary. But show me that you can reproduce headers with different levels please. This is a level 3 header, for your reference (you can most easily tell this from the table of contents).
+
+######Another header, now with maths
+
+Perhaps you're already really confused by the whole markdown thing. Maybe you're so confused that you've forgotton how to add. Never fear!
+~~A calculator~~
+R is here:
+
+```{r}
+1231521+12341556280987
+```
+
+####Table Time
+
+Or maybe, after you've added those numbers, you feel like it's about time for a table!
+I'm going to leave all the guts of the coding here so you can see how libraries (R packages) are loaded into R (more on that later). It's not terribly pretty, but it hints at how R works and how you will use it in the future. The summary function used below is a nice data exploration function that you may use in the ^future^.
+
+```{r}
+library(knitr)
+kable(summary(cars),caption="I made this table with kable in the knitr package library")
+```
+
+And now you've almost finished your first RMarkdown! Feeling excited? We are! In fact, we're so excited that maybe we need a big finale eh? Here's ours! Include a fun gif of your choice!
+
+![ ](https://media.giphy.com/media/y5yzypjVc9u3S/giphy.gif)
 
 
 # Module 02
@@ -658,6 +659,68 @@ Wooley, JC, Godzik, A, Friedberg, I. 2010. A primer on metagenomics. PLoS Comput
 
 # Module 03
 ## Microbial Species Concepts
+
+### Evidence Worksheet 05 
+
+[Welch *et al* 2002](https://www.ncbi.nlm.nih.gov/pubmed/12471157)
+
+#### Part 1: Learning objectives
+Evaluate the concept of microbial species based on environmental surveys and cultivation studies.  
+Explain the relationship between microdiversity, genomic diversity and metabolic potential.  
+Comment on the forces mediating divergence and cohesion in natural microbial communities.
+
+
+#### General questions
+* What were the main questions being asked?  
+    + To understand the genetic bases for pathogenicity and the evolutionary diversity of E. coli by using a model that compares genomic differences in the uropathogenic CTF073 strain, the enterohemorrhagic strain EDL933 and the non-pathogenic lab strain MG1655.  
+    + How the various strains under the same species differ or relate genetically and phenotypically.  
+    + Where did the pathogenicity islands that gave rise to various ecotypes come from?  
+    + How the process of gene transfer changes the ecotype through the acquisition of the gene islands
+    + The relationship between micro diversity, genomic diversity and metabolic potential.  
+
+
+* What were the primary methodological approaches used?  
+    + Automated Sanger Sequencing (dye-terminator chemistry) across 3700 machines on CFT073. Then, the sequence was annotated through the MAGPIE pieline and the predicted proteins were searched against BLAST.  
+
+
+* Summarize the main results or findings. 
+
+    + Although under the same species, strains MG1655, EDL933, and CFT073 have distinct ecotypes.  
+    + More than 70% of unique ORFs to the MG1655 or EDL933 have been replaced with new genes specific to CFT073. All three strains have 39.2% similarity in their proteins.     
+    + Genes in the backbone have been acquired through vertical transmission and have relatively low changes between CFT073 and EDL933, but Island genes in CFT073 have distinctive codon than the backbone, indicating the source of the island genes to be lateral gene transfer.  
+    + The island-specific genes are also very different from the other investigated strains, as there were only 204 out of 2004 shared island-specific gene with EDL933.  
+    + The typeIII secretion system that confer disease potential in EDL933, common to E.coli O157:H7, were absent in CFT073. Instead, CFT073 islands has specific fimbrial adhesins, secreted autotrasporters and phase-switch recombinases.These genes encode for adaptive traits that helps the strain select for fitness to colonize the urinary tract, leading to ecotype and pathogenesis.  
+    + In summary, island acquisition through HGT resulted in the capability to infect the urinary tract without compromising the ability to harmeslessly colonize the intesting for the uropathogenic strain of E. coli.
+    
+    
+    
+* Do new questions arise from the results?  
+    + The results from the paper suggests possible further investigation into other species to see if there are also such big genotype and phenotype differences between the pathogenic and non-pathogenic strains, and if the distinct phenoypes were conferred by islands obtained through horizontal gene transfer.
+    + In addition, the authors concluded that the genes preserved in the backbone allows CFT073 to survive in the intestine, even though it is a uropathogenic strain. They questioned where are the presence of "black holes", aka deletions that remove genes in the backbone detrimental to the uropathogenic lifestyle. At this time it is difficult to assess because of the large number of genetic differences already observed, such that additional *E. coli* genome sequences are needed for comparisons.  
+    + This paper has revealed the existance of large differences in ecotypes for organisms classified under the same species. It begs to question if the current species definition should be redefined, and what would be reasonable way to classify species?   
+    
+
+* Were there any specific challenges or advantages in understanding the paper (*e.g.* did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?  
+
+    + The paper had a short methods section that does not have enough explanations on how the sequencing techniques and technologies were used to come to the conclusion regarding the different pathogenicity islands/genome differences. As well, the assumptions involved in the analysis was also not obvious to the reader. In addition, I had difficulties following the sections talking about the details of the gene clusters in the pathogenicity islands. There wasn't enough background information provided to understand how specific operons play a role in the fimbriae, for example. 
+    
+
+#### Part 2: Learning objectives
+Comment on the creative tension between gene loss, duplication and acquisition as it relates to microbial genome evolution.  
+Identify common molecular signatures used to infer genomic identity and cohesion.  
+Differentiate between mobile elements and different modes of gene transfer.  
+
+#### Specific question
+
+* Based on your reading and discussion notes, explain the meaning and content of the following figure derived from the comparative genomic analysis of three E. coli genomes by Welch et al. Remember that CFT073 is a uropathogenic strain and that EDL933 is an enterohemorrhagic strain. Explain how this study relates to your understanding of ecotype diversity. Provide a definition of ecotype in the context of the human body. Explain why certain subsets of genes in CFT073 provide adaptive traits under your ecological model and speculate on their mode of vertical descent or gene transfer.  
+![](https://i.imgur.com/Xb6G9mk.png)  
+    + Ecotype can be defined as genetically similar but occupy distinct ecological niches. Ecotype possesses all properties of an organism, such as biochemical properties, functional phenotypes and virulence factors. In the human context, different strains of E. Coli can occupy different habitats in the human body because they have different niches and have different pathogenicities. For example: the uropathogenic strain CFT073 can colonize the urinary tract, enterohemorrhagic strain EDL933 in the intestines.  
+    + The diagram shows the location and sizes of CFT073 and EDL933 islands in the backbone. As we can see, most of the backbone carries identical genes between the two strains, except for gene clusters in the strain-specific islands. These islands often contain pathogenicity genes that confers an unique ecotype to the organism. For example, the *pap* operons present in *pheV* and *pheU* genes in the islands partly mediate the specific attachment for the urinary tract, is found in CFT073 but not EDL933, providing evidence for the variation in ecotypes.  
+    + Codon usage analysis revealed a high similarly in codon usage in the backbone *E. coli*, and concluded that these genes with a shared codon bias are not seen in the genes unique in each of the two strains. The common genes in the backbone of the *E. coli* genome has been preserved throughout its vertical evolution. Meanwhile, there was distinct codon usage in the island-specific genes between the two strains, indicating origins from horizontal gene transfer of mobile elements. These HGT gene clusters involved in novel metabolic functions provide a fitness benefit enabling them to be readily transferred. 
+    + In summary, the island-specific genes obtained from HGT in the uropathogenic strain has provided the organism with a distinct functional phenotype. Through environmental selection, these genes eventually allowed it to adapt to the urinary tract. However, the genes in the backbone inherited from vertical transfer still permits the uropathogenic strain to survive in intestinal environments.  
+
+
+
 ### Problem set 04 
 #### Learning objectives: 
 
@@ -725,7 +788,7 @@ ggplot(Collectors_Curve_V2, aes(x=x, y=y)) +
 - Yes , the curve has flattened out after 38 samples have been collected  
 
 * What can you conclude from the shape of your collector's curve as to your depth of sampling?  
-- The collector's curve is an increasing function with a slope that decreases as more individuals are classiied and less species remain to be identified. The curve is appraoching zero slope at the top, meaning that few to no new species remain identified. Sampling is likely to be adequate. 
+- The collector's curve is an increasing function with a slope that decreases as more individuals are classified and less species remain to be identified. The curve is approaching zero slope at the top, meaning that few to no new species remain identified. Sampling is likely to be adequate. 
 
 #### Part 3: Diversity estimates (alpha diversity)
 Using the table from Part 1, calculate species diversity using the following indices or metrics.
@@ -736,7 +799,7 @@ $\frac{1}{D}$ where $D = \sum p_i^2$
 
 $p_i$ = the fractional abundance of the $i^{th}$ species
 
-The higher the value is, the greater the diversity. The maximum value is the number of species in the sample, which occurs when all species contain an equal number of individuals. Because the index reflects the number of species present (richness) and the relative proportions of each species with a community (evenness), this metric is a diveristy metric. Consider that a community can have the same number of species (equal richness) but manifest a skewed distribution in the proportion of each species (unequal evenness), which would result in different diveristy values.
+The higher the value is, the greater the diversity. The maximum value is the number of species in the sample, which occurs when all species contain an equal number of individuals. Because the index reflects the number of species present (richness) and the relative proportions of each species with a community (evenness), this metric is a diversity metric. Consider that a community can have the same number of species (equal richness) but manifest a skewed distribution in the proportion of each species (unequal evenness), which would result in different diversity values.
 
 * What is the Simpson Reciprocal Index for your sample?  
 
@@ -782,7 +845,7 @@ We've been doing the above calculations by hand, which is a very good exercise t
 library(vegan)
 ```
 
-First, we must remove the unnecesary data columns and transpose the data so that `vegan` reads it as a species table with species as columns and rows as samples (of which you only have 1).
+First, we must remove the unnecessary data columns and transpose the data so that `vegan` reads it as a species table with species as columns and rows as samples (of which you only have 1).
 
 
 Then we can calculate the Simpson Reciprocal Index using the `diversity` function.
@@ -840,94 +903,37 @@ specpool(CandySample_diversity_V2)
 
 
 *Verify that these values match your previous calculations.  
-The Simpson Reciprocal Index have mathcing numbers for both individual and community samples with manhual calculation and R function. However, the Chao1 values do not match. 
+The Simpson Reciprocal Index have matching numbers for both individual and community samples with manual calculation and R function. However, the Chao1 values do not match. 
 
 #### Part 5: Concluding activity
 If you are stuck on some of these final questions, reading the [Kunin et al. 2010](https://www.ncbi.nlm.nih.gov/pubmed/19725865) and [Lundin et al. 2012](https://www.ncbi.nlm.nih.gov/pubmed/23760801) papers may provide helpful insights. 
 
 * How does the measure of diversity depend on the definition of species in your samples?
-    + depending on the definition of species in my sample, the measure of diversity will change based on how I grouped the different organisms (pieces of candies) according to their characteristics. The measure of diversity will decrease if there are more organisms grouped in the same specie taxa, resulting in less types of organisms in the community sample. As a result, the alphadiversity and Chao1 value will both decrease. 
+    + depending on the definition of species in my sample, the measure of diversity will change based on how I grouped the different organisms (pieces of candies) according to their characteristics. The measure of diversity will decrease if there are more organisms grouped in the same specie taxa, resulting in less types of organisms in the community sample. As a result, the alpha diversity and Chao1 value will both decrease. 
     
     
 * Can you think of alternative ways to cluster or bin your data that might change the observed number of species?  
-    + the observed number of species will also changed based on what I define as "a single species". For example, the twizzlers are long and filamentus. We defined a clump of it as one species while others may define each string as a species.  
+    + the observed number of species will also changed based on what I define as "a single species". For example, the Twizzlers are long and filamentous. We defined a clump of it as one species while others may define each string as a species.  
     
     
 
 * How might different sequencing technologies influence observed diversity in a sample?  
 
-    +  The parameter for pipielines during sequencing. For example, the sequencing platform, sample prep (consistent prrocessing of sample to get their DNA), and if the pipelines looks at the same gene region (ex. within 16s RNA) to identify different individuals.  
+    +  The parameter for pipelines during sequencing. For example, the sequencing platform, sample prep (consistent processing of sample to get their DNA), and if the pipelines looks at the same gene region (ex. within 16s RNA) to identify different individuals.  
 
 
-### Evidence Worksheet 05 
 
-[Welch *et al* 2002](https://www.ncbi.nlm.nih.gov/pubmed/12471157)
-
-#### Part 1: Learning objectives
-Evaluate the concept of microbial species based on environmental surveys and cultivation studies.  
-Explain the relationship between microdiversity, genomic diversity and metabolic potential.  
-Comment on the forces mediating divergence and cohesion in natural microbial communities.
-
-
-#### General questions
-* What were the main questions being asked?  
-    + To understand the genetic bases for pathogenicity and the evolutionary diversity of E. coli by using a model that compares genomic differences in the uropathogenic CTF073 strain, the enterohemorrhagic strain EDL933 and the non-pathogenic lab strain MG1655.  
-    + How the various strains under the same species differ or relate genetically and phenotypically.  
-    + Where did the pathogenicity islands that gave rise to various ecotypes come from?  
-    + How the process of gene transfer changes the ecotype through the acquisition of the gene islands
-    + The relationship between micro diversity, genomic diversity and metabolic potential.  
-
-
-* What were the primary methodological approaches used?  
-    + Automated Sanger Sequencing (dye-terminator chemistry) across 3700 machines on CFT073. Then, the sequence was annotated through the MAGPIE pieline and the predicted proteins were searched against BLAST.  
-
-
-* Summarize the main results or findings. 
-
-    + Although under the same species, strains MG1655, EDL933, and CFT073 have distinct ecotypes.  
-    + More than 70% of unique ORFs to the MG1655 or EDL933 have been replaced with new genes specific to CFT073. All three strains have 39.2% similarity in their proteins.     
-    + Genes in the backbone have been acquired through vertical transmission and have relatively low changes between CFT073 and EDL933, but Island genes in CFT073 have distinctive codon than the backbone, indicating the source of the island genes to be lateral gene transfer.  
-    + The island-specific genes are also very different from the other investigated strains, as there were only 204 out of 2004 shared island-specific gene with EDL933.  
-    + The typeIII secretion system that confer disease potential in EDL933, common to E.coli O157:H7, were absent in CFT073. Instead, CFT073 islands has specific fimbrial adhesins, secreted autotrasporters and phase-switch recombinases.These genes encode for adaptive traits that helps the strain select for fitness to colonize the urinary tract, leading to ecotype and pathogenesis.  
-    + In summary, island acquisition through HGT resulted in the capability to infect the urinary tract without compromising the ability to harmeslessly colonize the intesting for the uropathogenic strain of E. coli.
-    
-    
-    
-* Do new questions arise from the results?  
-    + The results from the paper suggests possible further investigation into other species to see if there are also such big genotype and phenotype differences between the pathogenic and non-pathogenic strains, and if the distinct phenoypes were conferred by islands obtained through horizontal gene transfer.
-    + In addition, the authors concluded that the genes preserved in the backbone allows CFT073 to survive in the intestine, even though it is a uropathogenic strain. They questioned where are the presence of "black holes", aka deletions that remove genes in the backbone detrimental to the uropathogenic lifestyle. At this time it is difficult to assess because of the large number of genetic differences already observed, such that additional *E. coli* genome sequences are needed for comparisons.  
-    + This paper has revealed the existance of large differences in ecotypes for organisms classified under the same species. It begs to question if the current species definition should be redefined, and what would be reasonable way to classify species?   
-    
-
-* Were there any specific challenges or advantages in understanding the paper (*e.g.* did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?  
-
-    + The paper had a short methods section that does not have enough explanations on how the sequencing techniques and technologies were used to come to the conclusion regarding the different pathogenicity islands/genome differences. As well, the assumptions involved in the analysis was also not obvious to the reader. In addition, I had difficulties following the sections talking about the details of the gene clusters in the pathogenicity islands. There wasn't enough background information provided to understand how specific operons play a role in the fimbriae, for example. 
-    
-
-#### Part 2: Learning objectives
-Comment on the creative tension between gene loss, duplication and acquisition as it relates to microbial genome evolution.  
-Identify common molecular signatures used to infer genomic identity and cohesion.  
-Differentiate between mobile elements and different modes of gene transfer.  
-
-#### Specific question
-
-* Based on your reading and discussion notes, explain the meaning and content of the following figure derived from the comparative genomic analysis of three E. coli genomes by Welch et al. Remember that CFT073 is a uropathogenic strain and that EDL933 is an enterohemorrhagic strain. Explain how this study relates to your understanding of ecotype diversity. Provide a definition of ecotype in the context of the human body. Explain why certain subsets of genes in CFT073 provide adaptive traits under your ecological model and speculate on their mode of vertical descent or gene transfer.  
-![](https://i.imgur.com/Xb6G9mk.png)  
-    + Ecotype can be defined as genetically similar but occupy distinct ecological niches. Ecotype possesses all properties of an organism, such as biochemical properties, functional phenotypes and virulence factors. In the human context, different strains of E. Coli can occupy different habitats in the human body because they have different niches and have different pathogenicities. For example: the uropathogenic strain CFT073 can colonize the urinary tract, enterohemorrhagic strain EDL933 in the intestines.  
-    + The diagram shows the location and sizes of CFT073 and EDL933 islands in the backbone. As we can see, most of the backbone carries identical genes between the two strains, except for gene clusters in the strain-specific islands. These islands often contain pathogenicity genes that confers an unique ecotype to the organism. For example, the *pap* operons present in *pheV* and *pheU* genes in the islands partly mediate the specific attachment for the urinary tract, is found in CFT073 but not EDL933, providing evidence for the variation in ecotypes.  
-    + Codon usage analysis revealed a high similarly in codon usage in the backbone *E. coli*, and concluded that these genes with a shared codon bias are not seen in the genes unique in each of the two strains. The common genes in the backbone of the *E. coli* genome has been preserved throughout its vertical evolution. Meanwhile, there was distinct codon usage in the island-specific genes between the two strains, indicating origins from horizontal gene transfer of mobile elements. These HGT gene clusters involved in novel metabolic functions provide a fitness benefit enabling them to be readily transferred. 
-    + In summary, the island-specific genes obtained from HGT in the uropathogenic strain has provided the organism with a distinct functional phenotype. Through environmental selection, these genes eventually allowed it to adapt to the urinary tract. However, the genes in the backbone inherited from vertical transfer still permits the uropathogenic strain to survive in intestinal environments.  
     
 ### Writing assessment 03
 *Discuss the challenges involved in defining a microbial species and how HGT complicates matters, especially in the context of the evolution and phylogenetic distribution of microbial metabolic pathways.  Can you comment on how HGT influences the maintenance of global biogeochemical cycles through time?  Finally, do you think it is necessary to have a clear definition of a microbial species?  Why or why not?*  
 
 In the prokaryotic world, horizontal gene transfer (HGT) is a driving force of microbial evolution under selective pressures. Currently, evolutionary phylogenetic relationships are established through metagenomic analysis using DNA hybridization or gene sequencing. However, the contribution of HGT in evolution complicates the reconstruction of phylogenies. The traditional definition of species may no longer be suitable for classification and must be refined with consideration of HGT events. This essay will explore the current standpoint of HGT and species definition from three perspectives: how the distribution of core metabolic genes via HGT impact the global biogeochemical cycle, current challenges in species classification caused by HGT, and the possibility of a redefined classification system incorporating ecological roles in addition to defining microbial species by genetic information.  
 
-The planetary genes involved in metabolic activities that shaped the evolution and the maintenance of global biogeochemical pathways were in part distributed by HGT across the three domains of life. HGT has the flexibility to allow organisms transfer genes to closely related species or even distantly related groups at times (1). Take the photosynthetic metabolism in the oxygen cycle for example, evidence suggest genes that were part of the primitive photosystems in the anoxygenic ancestor, were disseminated by HGT between different groups of bacteria (2). Specifically, the observation of highly similar photosynthesis genes in two phylogenetically distinct groups of purple bacteria suggest that the puf superoperon encoding the entire anoxygenic photosynthetic apparatus was horizontally transferred between the ?? and ?? subclasses (3,4). In addition to acquiring metabolic functions through HGT, various environmental selective pressures serve as major drivers for the retention or evolution these genes. For instance, anoxygenic phototrophs subjected to an anaerobic environment preserved the ancestral features of the photosynthetic apparatus to maximize energy output (2). Meanwhile, the selective pressures of UV light and depletion of electron donors pushed the evolution of anoxygenic type I and II reaction centers into oxygenic photosystems I and II in cyanobacteria (2). In other words, gene clusters involved in a single metabolic function provide a fitness benefit enabling them to be readily transferred. The wide-spread distribution of certain metabolic genes through HGT prevents the extinction of the metabolic pathway from environmental perturbations (1). Although HGT has in part shaped and maintained the biogeochemical cycles, it complicates the Darwinian model of microbial classification and species definition due to the ability to acquire novel genes in a single generation that can vastly diversify both the genotype and phenotype of organisms.  
+The planetary genes involved in metabolic activities that shaped the evolution and the maintenance of global biogeochemical pathways were in part distributed by HGT across the three domains of life. HGT has the flexibility to allow organisms transfer genes to closely related species or even distantly related groups at times (1). Take the photosynthetic metabolism in the oxygen cycle for example, evidence suggest genes that were part of the primitive photosystems in the anoxygenic ancestor, were disseminated by HGT between different groups of bacteria (2). Specifically, the observation of highly similar photosynthesis genes in two phylogenetically distinct groups of purple bacteria suggest that the *puf* superoperon encoding the entire anoxygenic photosynthetic apparatus was horizontally transferred between the alpha and beta subclasses (3,4). In addition to acquiring metabolic functions through HGT, various environmental selective pressures serve as major drivers for the retention or evolution these genes. For instance, anoxygenic phototrophs subjected to an anaerobic environment preserved the ancestral features of the photosynthetic apparatus to maximize energy output (2). Meanwhile, the selective pressures of UV light and depletion of electron donors pushed the evolution of anoxygenic type I and II reaction centers into oxygenic photosystems I and II in *Cyanobacteria* (2). In other words, gene clusters involved in a single metabolic function provide a fitness benefit enabling them to be readily transferred. The wide-spread distribution of certain metabolic genes through HGT prevents the extinction of the metabolic pathway from environmental perturbations (1). Although HGT has in part shaped and maintained the biogeochemical cycles, it complicates the Darwinian model of microbial classification and species definition due to the ability to acquire novel genes in a single generation that can vastly diversify both the genotype and phenotype of organisms.  
 
 The prokaryotic species definition remains a challenging issue to advance in the face of HGT. Currently the two most common genetic approaches integrated into species definition are by DNA-DNA hybridization or the rRNA gene-sequence approach (5). As pioneered by Woese, SSU or 16S ribosomal RNA (rRNA) has been used to identify phylogenetic relationship between organisms with a universally distributed gene (5). In metagenomics, classification of organisms employs comparing rRNA gene sequences in mixed reads from different species in a community (7). These reads are binned into operational taxonomic units (OTUs) based on genomic similarities and functional characteristics, which are obtained from sequence databases (7). The challenge with this process comes from difficulties in discerning which species the binned gene came from (7). As no gene appears to be immune to HGT, including informational genes such as rRNA (1), the intragenomic heterogeneity of rRNA genes from HGT could result in overestimation of the community diversity (8). The current gold standard approach to delineate a species is to exhibit 70% DNA-DNA binding, representing relatedness in gene content and nucleotide similarity (5). While this species definition is appropriate in eukaryotes, there are serious limitations in prokaryotes. The fact that 30% variation in a single bacterial species can be as diverse as an entire vertebrate order (9), suggests that a wide range of phenotypic differences exists within each bacterial species. For example, Escherichia coli (E. coli) strains CFT073, EDL933 and MG1655 are classified within the same species, but their pathogenicity and ecological niche differ widely. CFT073 is uropathogenic, while EDL933 is enterohemorrhagic and MG1655 is a non-pathogenic laboratory strain (10). Variations in ecological niche is in part due to the establishment of CFT073-unique island genes from HGT events. These genes encode for tissue-specific fimbriae and pilis that help the bacteria colonize new niches and establish pathogenic mechanisms in the urinary tract. (10)  In contrast, if we apply the same 70% genetic similarity criteria to eukaryotes, humans would be considered the same species as rodents (11). In summary, HGT provides a paradigm for generating rich ecotypes that is limited by the traditional species definition. There is a need for redefined means of classifying prokaryote species.   
 
-It is important to have a clear definition of species, but there is a need to re-consider classification based on solely on genetic similarity. Species definition play a vital role in clinical settings and public health. The significance of labelling is to allow scientists and clinicians to integrate findings on bacterial diseases and make consistent clinical diagnosis (12). However, the current species definition confers little evolutionary and ecological meaning in prokaryotes, partly due to HGT as mentioned previously. In addition, classifying new organisms based solely on genetic analysis is essentially meaningless, since clinical laboratories continue to rely on biochemical properties to identify bacterial strains rather than gene sequencing (12). Thus, species definition may be refined through a concept that combines theoretical definition (DNA analysis) and operational definition (functional phenotypes). While frequent gene transfer events between closely-related organisms makes lineages "fuzzy" at the species level, sequence similarity approaches can still reveal larger evolutionary patterns for classification (1). A more meaningful definition for species can involve incorporating the concept of ecotypes. Bacteria ecotypes have been defined as genetically similar but occupy distinct ecological niches (5). Under the E. coli species level, all strains exhibiting the same ecotype can be classified into a single group. For example, all uropathogenic E. coli would be grouped together as one "strain" regardless of genetic variation. This refined species definition will continue to hold medical significance as ecotypes possess all properties of an organism, such as biochemical properties, functional phenotypes, and virulence factors.  
+It is important to have a clear definition of species, but there is a need to re-consider classification based on solely on genetic similarity. Species definition play a vital role in clinical settings and public health. The significance of labeling is to allow scientists and clinicians to integrate findings on bacterial diseases and make consistent clinical diagnosis (12). However, the current species definition confers little evolutionary and ecological meaning in prokaryotes, partly due to HGT as mentioned previously. In addition, classifying new organisms based solely on genetic analysis is essentially meaningless, since clinical laboratories continue to rely on biochemical properties to identify bacterial strains rather than gene sequencing (12). Thus, species definition may be refined through a concept that combines theoretical definition (DNA analysis) and operational definition (functional phenotypes). While frequent gene transfer events between closely-related organisms makes lineages "fuzzy" at the species level, sequence similarity approaches can still reveal larger evolutionary patterns for classification (1). A more meaningful definition for species can involve incorporating the concept of ecotypes. Bacteria ecotypes have been defined as genetically similar but occupy distinct ecological niches (5). Under the E. coli species level, all strains exhibiting the same ecotype can be classified into a single group. For example, all uropathogenic E. coli would be grouped together as one "strain" regardless of genetic variation. This refined species definition will continue to hold medical significance as ecotypes possess all properties of an organism, such as biochemical properties, functional phenotypes, and virulence factors.  
 
 Horizontal gene transfer is an important force modulating microbial evolution, but complicates the current system of species definition. During microbial evolution, HGT events have resulted in phylogenetic distribution of microbial metabolic pathways by propagating genes that confer higher level of fitness under environmental selective pressures. Metabolic pathways such as photosynthesis that are acquired through HGT have influenced the early biogeochemical cycles and continue to maintain them today. However, HGT complicates the process of defining microbial species at the genetic level due to its influences on rRNA and its role in intra-species diversification. Although HGT renders defining species challenging, it is still essential to have a clear definition of species for clinical diagnosis and treatments. A marriage between genetic similarity and operational classification has been proposed to refine the current species definition by grouping together various strains that share the same ecotype within the species level. With rapid advances in molecular and genome biology, a sequence-based framework that has sufficient flexibility to accommodate the vast differences in biology may revolutionize taxonomy.  
 
@@ -1004,7 +1010,7 @@ Lawrence, JG. 2002. Gene transfer in bacteria: speciation without species? Theor
 
 Loman, NJ, Misra, RV, Dallman, TJ, Constantinidou, C, Gharbia, SE, Wain, J, Pallen, MJ. 2012. Performance comparison of benchtop high-throughput sequencing platforms. Nat. Biotechnol. 30:434.[PMID22522955](https://www.ncbi.nlm.nih.gov/pubmed/22522955)  
 
-Lundin, D, Severin, I, Logue, JB, Östman, Ö, Andersson, AF, Lindström, ES. 2012. Which sequencing depth is sufficient to describe patterns in bacterial ??-and ??-diversity? Environmental Microbiology Reports. 4:367-372.[PMID23760801](https://www.ncbi.nlm.nih.gov/pubmed/23760801)  
+Lundin, D, Severin, I, Logue, JB, Hostman, J, Andersson, AF, Lindstrom, ES. 2012. Which sequencing depth is sufficient to describe patterns in bacterial alpha-and beta-diversity? Environmental Microbiology Reports. 4:367-372.[PMID23760801](https://www.ncbi.nlm.nih.gov/pubmed/23760801)  
 
 Mulkidjanian, AY, Koonin, EV, Makarova, KS, Mekhedov, SL, Sorokin, A, Wolf, YI, Dufresne, A, Partensky, F, Burd, H, Kaznadzey, D. 2006. The cyanobacterial genome core and the origin of photosynthesis. Proceedings of the National Academy of Sciences. 103:13126-13131.[PMID16924101 ](https://www.ncbi.nlm.nih.gov/pubmed/16924101)  
 
